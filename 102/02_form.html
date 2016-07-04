@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>Hello world. </title>
+</head>
+<body lang="zh-cn">
+<style type="text/css">
+input {font-size:1em;}
+
+input:required {
+	background-color:lightyellow;
+}
+input:required:invalid {
+	background-color:lightgreen;
+}
+</style>
+<br><br><br><br><br>
+
+<form action="#">
+	<input type="text" name="lastname" required/>
+	<br><br>
+	<input type="email" name="i_2" required/>
+	<br><br>
+	<input type="date" name="i_3" value="" />
+	<br><br>
+	<input type="time" name="i_4" value="13:59:59"/>
+	<br><br>
+	<input type="submit" name="s_1" value="提交">
+</form>
+
+
+</body>
+</html>
