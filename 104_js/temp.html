@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title> example </title>
+
+<style media="screen">
+.desc {
+	font-size: 0.7em;
+	color: red;
+}
+</style>
+
+
+<script type="text/javascript">
+
+function show_desc(){
+	var desc = document.getElementById("userid_desc");
+	desc.style.display = "block";
+}
+
+function hide_desc(){
+	var desc = document.getElementById("userid_desc");
+	desc.style.display = "none";
+}
+
+</script>
+
+</head>
+<body >
+<form class="" action="index.html" method="post">
+
+请选择用户名：<input type="text" name="userid" value=""
+ onfocus="show_desc()" onblur="hide_desc()" > *
+<span id="userid_desc" class="desc" style="display:none;">
+	1. 不能为空。 <br>
+	2. 只能由英文字母和数字组成。 <br>
+	3. 不能用数字开头。 <br>
+</span>
+
+<br>
+<input type="button" name="b_1" value="OK">
+
+</form>
+
+</body>
+</html>
